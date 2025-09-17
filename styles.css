@@ -1,0 +1,27 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body and html take full viewport */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Hide scrollbars to keep the canvas filling the window */
+}
+
+/* Canvas styling */
+#gameCanvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    /* Black background in case the world image doesn't load */
+    cursor: crosshair;
+    /* Game-like cursor for future click-to-move functionality */
+}
